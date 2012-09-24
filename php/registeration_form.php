@@ -19,9 +19,23 @@ $country=$_POST["country"];
 $state=$_POST["state"];
 $city=$_POST["city"];
 $pincode=$_POST["pincode"];
+$file=$_FILES['file'];
+$file_name=$file['name'];
 
 mysql_select_db("registeration");
-$query=" insert into user_info(first_name,last_name,age,gender,email_id,address,country,state,city,pincode) values ('$firstNname','$lastName','$age','$gender','$emailId','$address','$country','$state','$city','$pincode')";
+
+$path="/uploads/".basename($file_name);
+if (move_uploaded_file($file['tmp_name'], $path))
+{
+    //echo "inserted succsesfully";
+}
+else
+{
+ //echo "file error";
+}
+
+
+$query=" insert into user_info(first_name,last_name,age,gender,email_id,address,country,state,city,pincode,image) values ('$firstNname','$lastName','$age','$gender','$emailId','$address','$country','$state','$city','$pincode','$path')";
 
 $result=mysql_query($query);
 if($result)
@@ -29,20 +43,6 @@ if($result)
   echo "data inserted";
 }
 
-
-//file upload validation
-if ($_FILES["file"]["error"] > 0)
-{
-    echo "Error: " . $_FILES["file"]["error"] . "<br />";
-}
-else
-{
-    print_r($_FILES);
-    echo "Upload: " . $_FILES["file"]["name"] . "<br />";
-    echo "Type: " . $_FILES["file"]["type"] . "<br />";
-    echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
-    echo "Stored in: " . $_FILES["file"]["tmp_name"];
-}
 
 mysql_close($con);
 echo "<br/>";

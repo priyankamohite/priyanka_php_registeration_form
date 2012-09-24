@@ -9,7 +9,7 @@
 </head>
 <body>
     <form id='registeration_form' action='http://spike6.webonise.com/php/registeration_form.php' method='post' enctype='multipart/form-data' name="registeration_form">
-    <div id="header"><h2>Employee Registeration Form<h2></div>
+    <div id="header"><h2>Employee Registeration Form</h2></div>
     <div id="outer">
         <table id='upper'>
                 <tr>
@@ -103,7 +103,7 @@
                 var numericPattern = /^\d*[0-9](|.\d*[0-9]|,\d*[0-9])?$/;
 
                 //for required feild validation
-                if(fname==""|| lname=="" || age==""|| !gender ||address==""||pincode==""||description==""||email_id=="")
+                if(fname==""|| lname=="" || age==""|| !gender ||address==""||pincode==""||email_id=="")
                 {
                     alert("All fields are mandatory...");
                     return false;
@@ -128,7 +128,7 @@
                 //age validation
                 //age must be number and positive
                 else if(!numericPattern.test(age) || age<=0 || age>=150 )
-                {registerationform
+                {
                     alert("Please enter valid age");
                     return false;
                 }
