@@ -5,18 +5,23 @@
     <title></title>
 </head>
 <body>
-    <form id='registeration_form' action='registeration_form.php' method='post'>
+    <form id='registeration_form' action='http://spike6.webonise.com/php/registeration_form.php' method='post'>
         <table>
                 <tr>
-                    <td>Enter your Name</td><td><input type="text" id="name" name="name"/></td>
+                    <td>Enter your First Name</td><td><input type="text" id="Fname" name="Fname"/></td>
+                </tr>
+                <tr>
+                    <td>Enter your Last Name</td><td><input type="text" id="Lname" name="Lname"/></td>
                 </tr>
                 <tr>
                     <td>Enter your age</td><td><input type="number" id="age" name="age"/></td>
                 </tr>
                 <tr>
                     <td>
-                        Select your gender</td><td><input type="radio" name="gender" value="male" id="gender"/>Male
-                    <input type="radio" name="gender" value="female" id="gender"/>Female</td>
+                        Select your gender</td>
+                    <td><input type="radio" name="gender" value="male" id="male"/>Male
+                        <input type="radio" name="gender" value="female" id="female"/>Female
+                    </td>
                 </tr>
                 <tr>
                     <td>Enter your email-id</td><td><input type="text" name="email_id" id="email_id"/></td>
@@ -26,7 +31,7 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td>Country:<select id="country">
+                    <td>Country:<select id="country" name="country">
                         <option selected="selected"
                                 value="0">-select-</option>
                         <option value="volvo">India</option>
@@ -34,7 +39,7 @@
                         <option value="mercedes">Shrilanka</option>
                         </select>
                     </td>
-                    <td>State:<select id="state">
+                    <td>State:<select id="state" name="state">
                         <option selected="selected"
                                 value="0">-select-</option>
                         <option value="volvo">Maharashtra</option>
@@ -42,7 +47,7 @@
                         <option value="mercedes">U.P.</option>
                     </select>
                     </td>
-                    <td>City:<select id="city">
+                    <td>City:<select id="city" name="city">
                         <option selected="selected"
                                 value="0">-select-</option>
                         <option value="volvo">Pune</option>
