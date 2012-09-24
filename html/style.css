@@ -1,0 +1,26 @@
+
+#header
+{
+	background-color: #12DE78;
+	text-align:center;
+	color: #FFFAFA;
+	height: 50px;
+}
+
+#outer
+{
+	border: 3px green solid;
+	width: 820px;
+	margin: auto;
+	
+}
+
+#upper,#lower
+{
+	
+	padding: 30px ;
+	border-spacing: 15px;
+	font-weight: bold;
+	color: #2C84A7;
+}
+

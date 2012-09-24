@@ -2,11 +2,11 @@
 $con = mysql_connect("localhost","root","borntoowin");
 if (!$con)
 {
-    echo "Error:can not connect to database";
+    echo "Error:can not connect to database<br/>";
 }
 else
 {
-    echo "connected to the database";
+    echo "connected to the database<br/>";
 }
 
 $firstNname=$_POST["Fname"];
@@ -29,7 +29,23 @@ if($result)
   echo "data inserted";
 }
 
+
+//file upload validation
+if ($_FILES["file"]["error"] > 0)
+{
+    echo "Error: " . $_FILES["file"]["error"] . "<br />";
+}
+else
+{
+    print_r($_FILES);
+    echo "Upload: " . $_FILES["file"]["name"] . "<br />";
+    echo "Type: " . $_FILES["file"]["type"] . "<br />";
+    echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
+    echo "Stored in: " . $_FILES["file"]["tmp_name"];
+}
+
 mysql_close($con);
+echo "<br/>";
 echo "connection closed";
 ?>
 
