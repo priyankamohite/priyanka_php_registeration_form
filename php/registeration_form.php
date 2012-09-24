@@ -21,27 +21,27 @@ $city=$_POST["city"];
 $pincode=$_POST["pincode"];
 $file=$_FILES['file'];
 $file_name=$file['name'];
+$Language=serialize($_POST['$Language']);
 
 mysql_select_db("registeration");
 
-$path="/uploads/".basename($file_name);
+$path="/home/webonise/projects/php/app2012/registeration_form/upload/".basename($file_name);
 if (move_uploaded_file($file['tmp_name'], $path))
 {
-    //echo "inserted succsesfully";
-}
-else
+    $query=" insert into user_info(first_name,last_name,age,gender,email_id,address,country,state,city,pincode,image,languages) values ('$firstNname','$lastName','$age','$gender','$emailId','$address','$country','$state','$city','$pincode','$file_name','$Language')";
+
+    $result=mysql_query($query);
+    if($result)
+    {
+        echo "data inserted";
+    }
+//    echo "inserted succsesfully";
+}else
 {
- //echo "file error";
+ echo "file error";
 }
 
 
-$query=" insert into user_info(first_name,last_name,age,gender,email_id,address,country,state,city,pincode,image) values ('$firstNname','$lastName','$age','$gender','$emailId','$address','$country','$state','$city','$pincode','$path')";
-
-$result=mysql_query($query);
-if($result)
-{
-  echo "data inserted";
-}
 
 
 mysql_close($con);
