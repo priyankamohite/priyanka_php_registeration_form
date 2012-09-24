@@ -43,10 +43,10 @@
       <file leaf-file-name="showall.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../php/showall.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="98" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.39748955">
+            <state line="19" column="107" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.39748955">
               <folding>
-                <marker date="1348497724000" expanded="true" signature="1101:1117" placeholder="..." />
-                <marker date="1348497724000" expanded="true" signature="1108:1117" placeholder="..." />
+                <marker date="1348498232000" expanded="true" signature="1102:1118" placeholder="..." />
+                <marker date="1348498232000" expanded="true" signature="1109:1118" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -244,10 +244,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../php/showall.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="98" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.39748955">
+        <state line="19" column="107" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.39748955">
           <folding>
-            <marker date="1348497724000" expanded="true" signature="1101:1117" placeholder="..." />
-            <marker date="1348497724000" expanded="true" signature="1108:1117" placeholder="..." />
+            <marker date="1348498232000" expanded="true" signature="1102:1118" placeholder="..." />
+            <marker date="1348498232000" expanded="true" signature="1109:1118" placeholder="..." />
           </folding>
         </state>
       </provider>

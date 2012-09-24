@@ -17,7 +17,7 @@ while($row = mysql_fetch_array($result)){
     echo "<tr><td>" . $row['first_name'] . "</td><td>" . $row['last_name'] . "</td><td>" . $row['age'] .
         "</td><td>".$row['gender']."</td><td>".$row['email_id']."</td><td>".$row['address']."</td><td>".
         $row['country']."</td><td>".$row['state']."</td><td>".$row['city']."</td><td><img src='http://spike6.webonise.com/upload/".$row['image'].
-        "'/></td><td>".$row['languages']."</td><td>".$row['language2']."</td><td>".$row['language3']."</td><td>";
+        "'/></td><td>".$row['languages']."</td><td>".$row['language2']."</td><td>".$row['language3']."</td></tr>";
 
 
 }
