@@ -6,7 +6,7 @@ if (!$con)
 }
 else
 {
-    echo "connected to the database<br/>";
+    //echo "connected to the database<br/>";
 }
 
 $firstNname=$_POST["Fname"];
@@ -23,17 +23,26 @@ $file=$_FILES['file'];
 $file_name=$file['name'];
 $Language=serialize($_POST['$Language']);
 
+$Lang = $_POST['Language'];
+
+
+    for($i=0; $i < 4; $i++)
+    {
+        echo($Lang[$i] . " ");
+    }
+
 mysql_select_db("registeration");
 
 $path="/home/webonise/projects/php/app2012/registeration_form/upload/".basename($file_name);
 if (move_uploaded_file($file['tmp_name'], $path))
 {
-    $query=" insert into user_info(first_name,last_name,age,gender,email_id,address,country,state,city,pincode,image,languages) values ('$firstNname','$lastName','$age','$gender','$emailId','$address','$country','$state','$city','$pincode','$file_name','$Language')";
+    $query=" insert into user_info(first_name,last_name,age,gender,email_id,address,country,state,city,pincode,image,languages,language2,language3) values ('$firstNname','$lastName','$age','$gender','$emailId','$address','$country','$state','$city','$pincode','$file_name','$Lang[0]','$Lang[1]','$Lang[2]')";
 
     $result=mysql_query($query);
     if($result)
     {
-        echo "data inserted";
+        echo "Your information is added succsesfully.....<br/><br/>";
+
     }
 //    echo "inserted succsesfully";
 }else
@@ -46,10 +55,10 @@ if (move_uploaded_file($file['tmp_name'], $path))
 
 mysql_close($con);
 echo "<br/>";
-echo "connection closed";
+//echo "connection closed";
 ?>
 
-
+<a href="http://spike6.webonise.com/php/showall.php">Show all Employees</a>
 
 
 

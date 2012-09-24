@@ -25,7 +25,7 @@
       <file leaf-file-name="registeration_form.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/registeration_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="0" selection-start="4096" selection-end="4096" vertical-scroll-proportion="-13.125">
+            <state line="87" column="0" selection-start="4096" selection-end="4096" vertical-scroll-proportion="-24.375">
               <folding />
             </state>
           </provider>
@@ -34,7 +34,7 @@
       <file leaf-file-name="registeration_form.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../php/registeration_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="251" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0">
+            <state line="38" column="292" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -43,10 +43,10 @@
       <file leaf-file-name="showall.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../php/showall.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.6369863">
+            <state line="19" column="98" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.39748955">
               <folding>
-                <marker date="1348495079000" expanded="true" signature="952:968" placeholder="..." />
-                <marker date="1348495079000" expanded="true" signature="959:968" placeholder="..." />
+                <marker date="1348497724000" expanded="true" signature="1101:1117" placeholder="..." />
+                <marker date="1348497724000" expanded="true" signature="1108:1117" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -230,24 +230,24 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/registeration_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="0" selection-start="4096" selection-end="4096" vertical-scroll-proportion="-13.125">
+        <state line="87" column="0" selection-start="4096" selection-end="4096" vertical-scroll-proportion="-24.375">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../php/registeration_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="251" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0">
+        <state line="38" column="292" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../php/showall.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.6369863">
+        <state line="19" column="98" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.39748955">
           <folding>
-            <marker date="1348495079000" expanded="true" signature="952:968" placeholder="..." />
-            <marker date="1348495079000" expanded="true" signature="959:968" placeholder="..." />
+            <marker date="1348497724000" expanded="true" signature="1101:1117" placeholder="..." />
+            <marker date="1348497724000" expanded="true" signature="1108:1117" placeholder="..." />
           </folding>
         </state>
       </provider>
