@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <form id='registeration_form' action='registeration_form.php' method='post'>
+        <table>
+                <tr>
+                    <td>Enter your Name</td><td><input type="text" id="name" name="name"/></td>
+                </tr>
+                <tr>
+                    <td>Enter your age</td><td><input type="number" id="age" name="age"/></td>
+                </tr>
+                <tr>
+                    <td>
+                        Select your gender</td><td><input type="radio" name="gender" value="male" id="gender"/>Male
+                    <input type="radio" name="gender" value="female" id="gender"/>Female</td>
+                </tr>
+                <tr>
+                    <td>Enter your email-id</td><td><input type="text" name="email_id" id="email_id"/></td>
+                </tr>
+                <tr>
+                    <td>Enter your address</td><td><textarea rows="2" cols="20" name="address" id="address"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Country:<select id="country">
+                        <option selected="selected"
+                                value="0">-select-</option>
+                        <option value="volvo">India</option>
+                        <option value="saab">Nepal</option>
+                        <option value="mercedes">Shrilanka</option>
+                        </select>
+                    </td>
+                    <td>State:<select id="state">
+                        <option selected="selected"
+                                value="0">-select-</option>
+                        <option value="volvo">Maharashtra</option>
+                        <option value="saab">M.P.</option>
+                        <option value="mercedes">U.P.</option>
+                    </select>
+                    </td>
+                    <td>City:<select id="city">
+                        <option selected="selected"
+                                value="0">-select-</option>
+                        <option value="volvo">Pune</option>
+                        <option value="saab">Mumbai</option>
+                        <option value="mercedes">Nagpur</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter your pincode</td><td><input type="number" id="pincode" name="pincode"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="error" style="display:none">*Please fill all the fields...</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Rgister Me" id="submitbutton" name="submit"/></td>
+                </tr>
+            </table>
+    </form>
+</body>
+</html>
